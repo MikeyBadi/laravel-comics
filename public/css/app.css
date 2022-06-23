@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header nav {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+header nav .logo {
+  width: 80px;
+}
+header nav .logo img {
+  width: 100%;
+}
+header nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 60%;
+}
+header nav .menu ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+header nav .menu ul a {
+  height: 100%;
+  color: black;
+  padding-bottom: 29.75px;
+}
+header nav .menu ul a:hover {
+  border-bottom: 5px solid #3080F6;
+  color: #3080F6;
+}
+header nav .menu ul a .active {
+  border-bottom: 5px solid #3080F6;
+  color: #3080F6;
+}
+
+main {
+  background-color: #1C1C1C;
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.current {
+  position: absolute;
+}
+
+.current div {
+  width: 236px;
+  background-color: #3182F9;
+  padding: 15px 25px;
+  position: relative;
+  bottom: 30px;
+  left: 0;
+}
+
+.com-cont {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0 20px;
+}
+.button-div button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 60px;
+  border: 0px solid;
+  color: #ffffff;
+  background-color: #3182F9;
+}
+
+.com-div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 11.1111111111vw;
+  max-width: 11.1111111111vw;
+  height: 11.1111111111vw;
+  margin: 10px 14px;
+}
+
+.comics {
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+}
+.comics img {
+  width: 100%;
+  height: 152%;
+}
+
+.jumbotron {
+  height: 400px;
+  overflow: hidden;
+  background: url("../img/jumbotron.jpg");
+  background-size: cover;
+}

@@ -1,0 +1,41 @@
+footer{
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .footerLinks{
+    background-image: url('../assets/img/footer-bg.jpg') ;
+    background-size: cover;
+
+    .links{
+      width: 30%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 40px;
+
+      ul{
+        display: inline-block;
+        justify-self: center;
+        padding-bottom: 20px;
+        h3{
+          display: inline-block;
+          padding-bottom: 15px;
+          color: $primary-color;
+        }
+        a{
+          color:$footer-links;
+          font-size: 12px;
+        }
+      }
+
+    }
+      img{
+        height: 35rem;
+        position: absolute;
+        right: 0px;
+        top: -25.5%;
+      }
+  }
