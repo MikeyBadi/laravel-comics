@@ -4,10 +4,12 @@ footer{
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    background-image: url('../img/footer-bg.jpg') ;
   }
   .footerLinks{
-    background-image: url('../assets/img/footer-bg.jpg') ;
     background-size: cover;
+    height: 500px;
+    width: 100%;
 
     .links{
       width: 30%;
@@ -37,5 +39,6 @@ footer{
         position: absolute;
         right: 0px;
         top: -25.5%;
+        margin: 0 auto;
       }
   }

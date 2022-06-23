@@ -2,6 +2,8 @@
 
 @section('content')
 @include('partials.jumbo')
+
+<main>
     <div class="container">
         <div class="current">
         <div>
@@ -11,20 +13,23 @@
 
         <div>
             <div class="com-cont">
-                <div class="com-div">
-                <div class="comics">
-                    <img src="" alt="">
-                </div>
-                    <p></p>
-                </div>
+                @foreach ( $comics as $comic)
+                    <div class="com-div">
+                        <div class="comics">
+                            <img src="{{$comic->image}}" alt="{{$comic->title}}">
+                        </div>
+                        <p>{{$comic->title}}</p>
+                    </div>
+                @endforeach
             </div>
 
         <div class="button-div">
             <button>LOAD MORE</button>
         </div>
-
-        </div>
-
     </div>
+
+</div>
+@include('partials.shop')
+</main>
     {{-- @dump($comics) --}}
 @endsection

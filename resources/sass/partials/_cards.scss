@@ -11,12 +11,13 @@ main{
   background-color: $dc-blue;
   padding: 15px 25px;
   position: relative;
-  bottom: 30px;
+  bottom: 80px;
   left: 0;
 }
 .com-cont{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center
 }
 .button-div{
   @include center();
@@ -34,13 +35,13 @@ main{
 .com-div{
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100vw / 9);
-    max-width: calc(100vw / 9);
-    height: calc(100vw / 9);
+    flex-basis: calc(100vw / 10);
+    min-width: 130px;
+    min-height: 130px;;
     margin: 10px 14px;
 }
 .comics{
-  height: 180px;
+ height: 130px;
  overflow: hidden;
  display: flex;
  img{
