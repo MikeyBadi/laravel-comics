@@ -1,0 +1,30 @@
+.signUp{
+    background-color: #303030;
+  }
+  button{
+    background-color: transparent;
+    border: 2px solid #358DFF;
+    color: $primary-color;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .container-sig{
+    @include center();
+    justify-content: space-between;
+    height: 110px;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .social{
+    @include center();
+    img{
+      margin-left: 20px;
+    }
+    h3{
+      margin-right: 15px;
+      color: #358DFF;
+    }
+  }

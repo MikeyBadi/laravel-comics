@@ -170,13 +170,11 @@ footer {
   justify-content: space-between;
   position: relative;
   overflow: hidden;
-  background-image: url("../img/footer-bg.jpg");
 }
 
 .footerLinks {
+  background-image: url("../img/footer-bg.jpg");
   background-size: cover;
-  height: 500px;
-  width: 100%;
 }
 .footerLinks .links {
   width: 30%;
@@ -185,17 +183,17 @@ footer {
   flex-direction: column;
   margin-top: 40px;
 }
-.footerLinks .links ul {
+.footerLinks .links .link-class {
   display: inline-block;
   justify-self: center;
   padding-bottom: 20px;
 }
-.footerLinks .links ul h3 {
+.footerLinks .links .link-class h3 {
   display: inline-block;
   padding-bottom: 15px;
   color: #ffffff;
 }
-.footerLinks .links ul a {
+.footerLinks .links .link-class a {
   color: #959594;
   font-size: 12px;
 }
@@ -204,5 +202,40 @@ footer {
   position: absolute;
   right: 0px;
   top: -25.5%;
+}
+
+.signUp {
+  background-color: #303030;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #358DFF;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.container-sig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+  width: 80%;
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social img {
+  margin-left: 20px;
+}
+.social h3 {
+  margin-right: 15px;
+  color: #358DFF;
 }

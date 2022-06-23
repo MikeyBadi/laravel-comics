@@ -124,12 +124,12 @@ $links=[
 ]
 ?>
 
-<footer>
-    <div class="footerLinks">
-        <div class="container">
-            <div class="links">
-              <ul>
-                @foreach ($links as $link)
+<div class="footerLinks">
+    <div class="container">
+      <footer>
+        <div class="links">
+            @foreach ($links as $link)
+            <ul class="link-class">
                 <li>
                   <h3>{{$link['linkTitle']}}</h3>
                 </li>
@@ -138,13 +138,14 @@ $links=[
                         <a href="{{$el['href']}}">{{$el['txt']}}</a>
                     </li>
                 @endforeach
-                @endforeach
 
-              </ul>
-            </div>
+            </ul>
+            @endforeach
         </div>
+        <img src="../img/dc-logo-bg.png" alt="">
+    </footer>
     </div>
-    <img src="../img/dc-logo-bg.png" alt="">
-</footer>
+</div>
+@include('partials.signUp')
 
 {{-- @dump($link['link']) --}}
