@@ -63,7 +63,8 @@ header nav .menu ul a:hover {
   border-bottom: 5px solid #3080F6;
   color: #3080F6;
 }
-header nav .menu ul a .active {
+
+.active {
   border-bottom: 5px solid #3080F6;
   color: #3080F6;
 }

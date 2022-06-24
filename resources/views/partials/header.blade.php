@@ -10,7 +10,9 @@
     'fans'=>'fans',
     'news'=>'news',
     'shop'=>'shop'
- ]
+];
+
+ $i=0;
 ?>
 
 <header>
@@ -25,8 +27,8 @@
         <ul>
         <?php foreach ($indexs as $index):?>
           <li>
-            {{-- <a class="{{ Route::currentRoutName() === $index ? 'active' : ''}}" href="{{ route($index)}}"></a> --}}
-            <a href="/comics"><?php echo strtoupper($index)?></a>
+            <a class="{{ Route::currentRouteName() === $index ? 'active' : ''}}" href="{{ route($index)}}">{{strtoupper($index)}}</a>
+            {{-- <a href="{{ route($index)}}">{{strtoupper($index)}}</a> --}}
           </li>
         <?php endforeach?>
         </ul>
